@@ -10,9 +10,10 @@ function dummy() {
 }
 dummy(1, 2, 3, "asd", "kjuan", 30, [5,6,7]);
 
-
-
-
+var arr = [1, 2, 3, 4, 5, 6];
+var str = "hola";
+var result = [str].concat(arr)
+console.log(result)
 
 function dummy2(a) {
 	return function(b){
