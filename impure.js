@@ -33,3 +33,35 @@
 
  console.log("Returned values of pureFuntion : ", pureResult);
  console.log("original object: ", pureValues)
+
+
+ /**
+  *  Impure function
+  */
+
+let values = { a: 1 };
+ let b = 1;
+
+ function impureFunc(a){
+	a = a * b + 2;
+	 return a;
+ }
+
+ console.log(impureFunc( values.a ));
+ // Actually, the value of `c` will depend on the value of `b`.
+// In a bigger codebase, you may forget about that, which may
+// surprise you because the result can vary implicitly.
+
+
+var values = { a: 1 };
+var b = 1;
+
+function pureFunction ( a, c ) {
+  a = a * c + 2;
+
+  return a;
+}
+
+var c = pureFunction( values.a, b );
+// Here it's made clear that the value of `c` will depend on
+// the value of `b`. No sneaky surprise behind your back.
