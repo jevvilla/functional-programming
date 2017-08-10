@@ -8,7 +8,7 @@ let dummyDataMessages =
 	{ message: 'Occaecat voluptate aute labore ex veniam labore adipisicing.' },
 	{ message: 'Ullamco in id aliqua do sunt sunt voluptate.' },
 	{ message: 'Sit laboris nostrud amet qui fugiat adipisicing.' },
-	{ message: 'Fugiat est proident ullamco irure laboris voluptate cillum veniam ullamco amet.' },
+	{ message: 'Fugiat est proident ullamco irure  laboris voluptate cillum veniam ullamco amet.' },
 	{ message: 'Proident dolore elit voluptate deserunt voluptate aliqua veniam est.' },
 	{ message: 'Consequat aliqua commodo magna sint qui do sint ut consequat velit magna dolore.' },
 	{ message: 'Lorem aute anim quis incididunt non.' },
@@ -34,7 +34,6 @@ function getShortMessages(messages) {
 	}
 }
 
-const start = new Date();
 getShortMessages(dummyDataMessages);
-console.log(new Date() - start, "milliseconds")
+
 // console.log(results)
