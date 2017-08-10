@@ -6,7 +6,7 @@
  */
 
 function dummy() {
-	console.log( Array.prototype.slice.call(arguments))
+	console.log( Array.prototype.slice.call(arguments)[6])
 }
 dummy(1, 2, 3, "asd", "kjuan", 30, [5,6,7]);
 
@@ -15,11 +15,11 @@ var str = "hola";
 var result = [str].concat(arr)
 console.log(result)
 
-function dummy2(a) {
-	return function(b){
-		console.log(a, b)
-	}
-}
+// function dummy2(a) {
+// 	return function(b){
+// 		console.log(a, b)
+// 	}
+// }
 
-var invq = dummy2('hello');
-invq("fsd");
+// var invq = dummy2('hello');
+// invq("fsd");

@@ -7,6 +7,7 @@
 //     }
 	
 	function doubleAll(numbers) {
+		console.log(numbers)
 		return numbers.map(number => number * 2);
 	}
 
